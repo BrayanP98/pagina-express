@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi pagina</title>
+  
+</head>
+<body>
+   <div class="container my-5" id="cont_productos">
+     <div class="row">
+        <div class="col-12" id="item-prod">
+       
+       {{#each prods}}
+        <div class="col-md-12">
+       
+         <img src="img/product01.png" alt="">
+         <div class="product-body">
+            <p class="product-category">Cod. {{codigo}}</p>
+            <h3 class="product-name"><a href="#">{{nombre}}</a></h3>
+            <h4 class="product-price">${{valor}}<del --class="product-old-price">$990.00</del></h4>
+         </div>
+         <div class="add-to-cart">
+		<button class="add-to-cart-btn">
+           <img src="/img/shop_car.svg" alt=""> add to cart</button>
+		</div>
+         
+        </div>
+         {{/each}}
+        
+        </div>
+
+
+   </div>
+   
+
+   
+
+
+     {{> tasks/pop-ups}}
+</body>
+</html>

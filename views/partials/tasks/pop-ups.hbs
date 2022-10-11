@@ -1,0 +1,51 @@
+ <div class="pop-up" id="pop-up">
+  <div class="pop-wrap" id="pop-wrap">
+    <div class="pop-up-title">
+      <h2>CODYTRoN</h2>
+      <p>lorem ipsud sis temd.</p>
+    </div>
+    <div class="subscription">
+      
+      <i class="fa-solid fa-circle-xmark" id="close"></i>
+      <div class="subs-content">
+         <h2>Inicio secion</h2>
+        <p>Ingresa tus datos</p>
+        <form  action="/task/findUser" method="post">
+          <input type="email" class="subs-email" placeholder="ingersa tu correo" name="email" id="email-user"required>
+          <input type="password" class="sub-pass" placeholder="ingersa tu contraseña" name="password" id="pwd" required>
+          <button  class="subs-send" type="submit" id="ingreso">Ingresar</button>
+          <a href="#" id="crear_cuenta">crear cuenta</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+  <div class="pop-up" id="pop-up-reg">
+    <div class="pop-wrap" id="pop-wrap-reg">
+      <div class="pop-up-title">
+        <h2>CODYTRoN</h2>
+        <p>lorem ipsud sis temd.</p>
+      </div>
+      <div class="subscription">
+       
+        <i class="fa-solid fa-circle-xmark" id="close-reg"></i>
+        <div class="subs-content">
+           <h2>Registro</h2>
+          <p>Ingresa tus datos</p>
+          <form  action="/task/addUser" method="post">
+            <input type="text" class="user-name" placeholder="ingersa tu nombre" name="nombre" required>
+            <input type="text" class="user-lastname" placeholder="ingersa tu apellido" name="apellido" required>
+            <input type="email" class="user-email" placeholder="ingersa tu correo" name="email" required>
+            <input type="password" class="user-pass" placeholder="ingersa tu contraseña" name="password" required>
+            <button class="subs-send" type="submit" >Registrar</button>
+           
+           
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    </div>
